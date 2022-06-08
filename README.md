@@ -1,2 +1,2 @@
 # LatihanDTSFGA1
-Repisoteri ini untuk Latihan DTSFGA
+Andi Imran- 149251970101-180
