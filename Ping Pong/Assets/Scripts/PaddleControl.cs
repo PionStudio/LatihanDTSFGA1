@@ -40,9 +40,10 @@ public class PaddleControl : MonoBehaviour
 
         return movement; 
     }
-
+        
     private void Movement(Vector2 move)
     {
         myRb.velocity = move;
+        Debug.Log("Kecepatan Paddle = " + move.ToString());
     }
 }

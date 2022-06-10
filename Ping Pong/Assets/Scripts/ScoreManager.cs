@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
@@ -10,17 +11,18 @@ public class ScoreManager : MonoBehaviour
     private int skorKiri;
     private int skorKanan;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private int maxScore;
 
     // Update is called once per frame
     void Update()
     {
         gawangKananText.text = skorKanan.ToString();
         gawangKiriText.text = skorKiri.ToString();
+
+        if ((skorKiri >= maxScore) || (skorKanan >= maxScore))
+        {
+            SceneManager.LoadScene("Main Menu");
+        }
     }
 
     public void CetakGoal(bool kiriGawang)

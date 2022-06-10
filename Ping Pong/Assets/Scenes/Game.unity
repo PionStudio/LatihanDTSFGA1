@@ -615,6 +615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gawangKiriText: {fileID: 1621723206}
   gawangKananText: {fileID: 1113394093}
+  maxScore: 5
 --- !u!4 &831307323
 Transform:
   m_ObjectHideFlags: 0
